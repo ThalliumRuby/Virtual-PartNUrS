@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"
+            android:textSize="60sp"
+            android:timeZone="GMT+8"
+            android:format12Hour="hh:mm aa"
+            android:format24Hour="hh:mm aa"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextClock
+            android:id="@+id/textClock2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:timeZone="GMT+8"
+            android:format12Hour="   dd-MM-yyyy EEEE"
+            android:format24Hour="   dd-MM-yyyy EEEE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/textClock"
+            android:layout_marginTop="12dp"/>
+    <ImageView
+            android:layout_width="270dp"
+            android:layout_height="378dp" app:srcCompat="@mipmap/boy"
+            android:contentDescription="@string/boy"
+            android:id="@+id/boy_1" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="28dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.713"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
